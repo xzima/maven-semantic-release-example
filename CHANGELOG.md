@@ -1,3 +1,10 @@
+## [3.1.12](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.11...v3.1.12) (2022-02-17)
+
+
+### Bug Fixes
+
+* add maven wrapper and enforcer check ([5370695](https://github.com/xzima/maven-semantic-release-example/commit/5370695310aefec8c2682c054bfa6f2093fad6fb))
+
 ## [3.1.11](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.10...v3.1.11) (2022-02-17)
 
 
