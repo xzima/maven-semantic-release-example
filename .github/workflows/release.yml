@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: '14'
 
+      - run: chmod u+x ./mvnw
+
       - name: Action For Semantic Release
         uses: cycjimmy/semantic-release-action@v2.7.0
         id: semantic
