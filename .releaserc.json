@@ -2,7 +2,8 @@
   "dry_run": true,
   "debug": true,
   "branches": [
-    "master"
+    "master",
+    "dev"
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
