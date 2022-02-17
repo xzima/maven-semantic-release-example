@@ -1,0 +1,37 @@
+{
+  "dry_run": true,
+  "debug": true,
+  "branches": [
+    "master"
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          "CHANGELOG.md"
+        ]
+      }
+    ],
+    [
+      "@conveyal/maven-semantic-release",
+      {
+        "use-conveyal-workflow": true,
+        "skip-maven-deploy": true,
+        "dev-branch": "dev",
+        "additionalFilesToCommit": [
+          "CHANGELOG.md",
+          "readme.txt"
+        ]
+      }
+    ]
+  ]
+}
