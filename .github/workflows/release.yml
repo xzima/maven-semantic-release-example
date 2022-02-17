@@ -24,7 +24,7 @@ jobs:
 
       - run: chmod u+x ./mvnw
 
-      - run: ./mvnw clean verify
+      - run: ./mvnw clean enforcer:enforce --debug
 
       - name: Action For Semantic Release
         uses: cycjimmy/semantic-release-action@v2.7.0
