@@ -1,3 +1,10 @@
+## [3.1.11](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.10...v3.1.11) (2022-02-17)
+
+
+### Bug Fixes
+
+* change App.java ([6e7cac8](https://github.com/xzima/maven-semantic-release-example/commit/6e7cac882f0f06c5ba0af7284773d3a40ceb09be))
+
 ## [3.1.10](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.9...v3.1.10) (2022-02-17)
 
 
