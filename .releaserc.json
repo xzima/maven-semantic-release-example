@@ -1,6 +1,13 @@
 {
   "dry_run": true,
   "debug": true,
+  "useConveyalWorkflow": true,
+  "skipMavenDeploy": true,
+  "devBranch": "dev",
+  "additionalFilesToCommit": [
+    "CHANGELOG.md",
+    "readme.txt"
+  ],
   "branches": [
     "master",
     "dev"
@@ -25,13 +32,7 @@
     [
       "@conveyal/maven-semantic-release",
       {
-        "use-conveyal-workflow": true,
-        "skip-maven-deploy": true,
-        "dev-branch": "dev",
-        "additionalFilesToCommit": [
-          "CHANGELOG.md",
-          "readme.txt"
-        ]
+
       }
     ]
   ]
