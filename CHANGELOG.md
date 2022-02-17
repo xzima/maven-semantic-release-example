@@ -1,3 +1,10 @@
+## [3.1.13](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.12...v3.1.13) (2022-02-17)
+
+
+### Bug Fixes
+
+* add maven verify check ([5f555a6](https://github.com/xzima/maven-semantic-release-example/commit/5f555a624169fd1b274278a002581a6969ca1431))
+
 ## [3.1.12](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.11...v3.1.12) (2022-02-17)
 
 
