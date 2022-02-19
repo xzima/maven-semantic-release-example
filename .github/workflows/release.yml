@@ -21,10 +21,18 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
+          cache: 'npm'
+          check-latest: true
+
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'maven'
+          check-latest: true
 
       - run: chmod u+x ./mvnw
-
-      - run: ./mvnw clean enforcer:enforce --debug
+      - run: ./mvnw clean test
 
       - name: Action For Semantic Release
         uses: cycjimmy/semantic-release-action@v2.7.0
@@ -36,25 +44,6 @@ jobs:
             @conveyal/maven-semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      #      - name: Setup Node.js with GitHub Package Registry
-      #        uses: actions/setup-node@v2
-      #        with:
-      #          node-version: 14
-      #          registry-url: 'https://npm.pkg.github.com'
-      #          scope: 'cycjimmy'
-      #
-      #      - name: Publish To GitHub Package Registry
-      #        if: steps.semantic.outputs.new_release_published == 'true'
-      #        run: npm publish
-      #        env:
-      #          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      #
-      #      - name: Push updates to branch for major version
-      #        if: steps.semantic.outputs.new_release_published == 'true'
-      #        run: "git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:refs/heads/v${{steps.semantic.outputs.new_release_major_version}}"
-      #        env:
-      #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Do something when a new release published
         if: steps.semantic.outputs.new_release_published == 'true'
