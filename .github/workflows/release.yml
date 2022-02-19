@@ -23,6 +23,7 @@ jobs:
           node-version: '14'
           cache: 'npm'
           check-latest: true
+          cache-dependency-path: .releaserc.json
 
       - uses: actions/setup-java@v2
         with:
