@@ -7,10 +7,7 @@
   "additionalFilesToCommit": "CHANGELOG.md",
   "branches": [
     "master",
-    {
-      "name": "dev",
-      "prerelease": true
-    }
+    "dev"
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
@@ -29,10 +26,6 @@
         ]
       }
     ],
-    [
-      "@conveyal/maven-semantic-release",
-      {
-      }
-    ]
+    "@conveyal/maven-semantic-release"
   ]
 }
