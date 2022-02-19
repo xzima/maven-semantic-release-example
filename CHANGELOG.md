@@ -1,3 +1,12 @@
+## [3.1.15](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.14...v3.1.15) (2022-02-19)
+
+
+### Bug Fixes
+
+* change build logic ([d78f3c5](https://github.com/xzima/maven-semantic-release-example/commit/d78f3c5282c483a700cca7e459cfa38c14285c0d))
+* change build logic ([f882026](https://github.com/xzima/maven-semantic-release-example/commit/f8820269ac46ee3c6a40d5ba27fb013dd0d4136f))
+* change build logic ([584f356](https://github.com/xzima/maven-semantic-release-example/commit/584f356e02f8ae99fcc3ed150a436b09bf8dc4f6))
+
 ## [3.1.15-dev.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.14...v3.1.15-dev.1) (2022-02-19)
 
 
