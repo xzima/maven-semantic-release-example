@@ -26,10 +26,6 @@
         ]
       }
     ],
-    [
-      "@conveyal/maven-semantic-release",
-      {
-      }
-    ]
+    "@conveyal/maven-semantic-release"
   ]
 }

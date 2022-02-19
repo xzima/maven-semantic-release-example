@@ -4,13 +4,21 @@
     <groupId>com.github.evansiroky</groupId>
     <artifactId>maven-semantic-release-example</artifactId>
     <packaging>jar</packaging>
-    <version>3.1.11-SNAPSHOT</version>
+    <version>3.1.19-SNAPSHOT</version>
     <name>maven-semantic-release-example</name>
     <description>Example project to auto-deploy maven projects</description>
     <url>https://github.com/evansiroky/maven-semantic-release-example</url>
     <properties>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <java.version>11</java.version>
+        <maven.version>3.8.4</maven.version>
+        <encoding>UTF-8</encoding>
+        <!--==========================================-->
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
+        <!--==========================================-->
+        <plugin.enforcer.version>3.0.0</plugin.enforcer.version>
     </properties>
     <licenses>
         <license>
@@ -45,6 +53,38 @@
 
     <build>
         <plugins>
+            <plugin>
+                <!-- https://maven.apache.org/enforcer/enforcer-rules -->
+                <!-- https://blogs.oracle.com/developers/post/mastering-maven-the-enforcer-plugin -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${plugin.enforcer.version}</version>
+                <configuration>
+                    <rules>
+                        <requireJavaVersion>
+                            <version>${java.version}</version>
+                        </requireJavaVersion>
+                        <requireMavenVersion>
+                            <version>[${maven.version},)</version>
+                        </requireMavenVersion>
+                        <bannedDependencies>
+                            <excludes>
+                                <exclude>log4j:log4j</exclude>
+                            </excludes>
+                        </bannedDependencies>
+                        <dependencyConvergence/>
+                        <banDuplicatePomDependencyVersions/>
+                    </rules>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>enforce</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <!-- Allow attaching Javadoc during releases -->
                 <groupId>org.apache.maven.plugins</groupId>
