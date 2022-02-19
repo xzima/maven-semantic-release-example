@@ -22,7 +22,6 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
-          check-latest: true
           cache-dependency-path: .releaserc.json
 
       - uses: actions/setup-java@v2
@@ -30,7 +29,6 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
           cache: 'maven'
-          check-latest: true
 
       - run: chmod u+x ./mvnw
       - run: ./mvnw clean test
