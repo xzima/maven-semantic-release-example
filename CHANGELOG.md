@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.21...v3.2.0) (2022-02-19)
+
+
+### Features
+
+* change build logic ([d1f0a8a](https://github.com/xzima/maven-semantic-release-example/commit/d1f0a8ab6d1968ead9413be922c4edfb05c66f8f))
+
 ## [3.1.21](https://github.com/xzima/maven-semantic-release-example/compare/v3.1.20...v3.1.21) (2022-02-19)
 
 
