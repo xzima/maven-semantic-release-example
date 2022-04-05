@@ -15,8 +15,8 @@ on:
 
 permissions:
   checks: write
-  contents: read
-  issues: read
+  contents: write
+  issues: write
   pull-requests: write
 
 jobs:
@@ -79,6 +79,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Release
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
