@@ -1,0 +1,18 @@
+debug: true
+branches:
+  - "master"
+  - - name: "dev"
+      channel: "rc"
+      prerelease: "rc"
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - "@semantic-release/changelog"
+  - - "@semantic-release/github"
+    - assets:
+        - "CHANGELOG.md"
+  - - "@semantic-release/exec"
+    - publishCmd: |
+        git tag -a -f ${nextRelease.version} ${nextRelease.version} -F CHANGELOG.md
+        git push --force origin ${nextRelease.version}
+        # commands that need an annotated tag to work
