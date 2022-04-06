@@ -1,3 +1,10 @@
+## [3.2.7-rc.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.6...v3.2.7-rc.1) (2022-04-06)
+
+
+### Bug Fixes
+
+* **ci:** rollback extend git push logic ([a0bef43](https://github.com/xzima/maven-semantic-release-example/commit/a0bef43a1f57d5a4f613ae1b1a0a1c438519b104))
+
 ## [3.2.6](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.5...v3.2.6) (2022-04-06)
 
 
