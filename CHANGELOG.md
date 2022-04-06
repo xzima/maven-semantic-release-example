@@ -1,3 +1,11 @@
+## [3.2.5-rc.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.4...v3.2.5-rc.1) (2022-04-06)
+
+
+### Bug Fixes
+
+* **ci:** remove debug ([a71df0f](https://github.com/xzima/maven-semantic-release-example/commit/a71df0f083b60b8ce4f41381b4980ae9ad4720e1))
+* **pom:** fix jgitver configuration(ignore branch name for all branches) ([5fc9dc1](https://github.com/xzima/maven-semantic-release-example/commit/5fc9dc17fd17df5a7591a0b6c99cf7ecbca97a9b))
+
 ## [3.2.4](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.3...v3.2.4) (2022-04-06)
 
 
