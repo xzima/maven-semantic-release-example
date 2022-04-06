@@ -8,7 +8,7 @@ on:
       - master
       - dev
   pull_request:
-    types: [ opened, synchronize ]
+    types: [ opened, synchronize, reopened ]
     branches:
       - master
       - dev
@@ -24,7 +24,8 @@ jobs:
     name: Lint Commit Messages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: init repo
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -38,15 +39,20 @@ jobs:
     name: Run tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: init repo
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/setup-java@v2
+
+      - name: init jvm
+        uses: actions/setup-java@v2
         with:
           distribution: 'temurin'
           java-version: '11'
           cache: 'maven'
+
       - run: ./mvnw clean test
+
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v1
         if: always()
@@ -60,24 +66,32 @@ jobs:
     outputs:
       new_release_published: ${{ steps.release.outputs.new_release_published }}
     steps:
-      - uses: actions/checkout@v3
+      - name: init repo
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-java@v2
+      - name: init jvm
+        uses: actions/setup-java@v2
         with:
           distribution: 'temurin'
           java-version: '11'
           cache: 'maven'
 
-        # fix https://github.com/cycjimmy/semantic-release-action/issues/79
-      - uses: actions/setup-node@v3
+      - name: init npm
+        uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
+          cache: 'npm'
+          cache-dependency-path: |
+            package-lock.json
+            patches/**
 
       - name: Install dependencies
         run: npm ci
-      - name: Release
+
+      - id: release
+        name: Release
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
