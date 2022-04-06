@@ -4,7 +4,7 @@
     <groupId>com.github.evansiroky</groupId>
     <artifactId>maven-semantic-release-example</artifactId>
     <packaging>jar</packaging>
-    <version>3.2.1-SNAPSHOT</version>
+    <version>SNAPSHOT</version>
     <name>maven-semantic-release-example</name>
     <description>Example project to auto-deploy maven projects</description>
     <url>https://github.com/evansiroky/maven-semantic-release-example</url>
@@ -94,7 +94,7 @@
                     <source>11</source>
                     <detectJavaApiLink>false</detectJavaApiLink>
                     <!-- Turn off Java 8 strict Javadoc checking -->
-                    <additionalparam>-Xdoclint:none</additionalparam>
+                    <doclint>none</doclint>
                     <tags>
                         <tag>
                             <name>notnull</name>

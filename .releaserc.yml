@@ -1,0 +1,16 @@
+debug: true
+branches:
+  - "master"
+  - name: "dev"
+    channel: "rc"
+    prerelease: "rc"
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - "@semantic-release/changelog"
+  - - "@semantic-release/github"
+    - assets:
+        - "CHANGELOG.md"
+  - - "@semantic-release/exec"
+    - publishCmd: |
+        ./mvnw -B clean package

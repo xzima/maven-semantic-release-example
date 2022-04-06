@@ -1,0 +1,83 @@
+---
+name: "CI"
+
+on:
+  workflow_call:
+  push:
+    branches:
+      - master
+      - dev
+  pull_request:
+    types: [ opened, synchronize ]
+    branches:
+      - master
+      - dev
+
+permissions:
+  checks: write
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+#  commit-lint:
+#    name: Lint Commit Messages
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#
+#      - uses: wagoid/commitlint-github-action@v4.1.9
+#        with:
+#          configFile: .github/commitlint.config.js
+#          helpURL: https://www.conventionalcommits.org
+
+#  run-test:
+#    needs: [ commit-lint ]
+#    name: Run tests
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#      - uses: actions/setup-java@v2
+#        with:
+#          distribution: 'temurin'
+#          java-version: '11'
+#          cache: 'maven'
+#      - run: ./mvnw clean test
+#      - name: Publish Unit Test Results
+#        uses: EnricoMi/publish-unit-test-result-action@v1
+#        if: always()
+#        with:
+#          files: "target/surefire-reports/TEST-*.xml"
+
+  release:
+#    needs: [ run-test ]
+    name: Release
+    runs-on: ubuntu-latest
+    outputs:
+      new_release_published: ${{ steps.release.outputs.new_release_published }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'maven'
+
+        # fix https://github.com/cycjimmy/semantic-release-action/issues/79
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+
+      - name: Install dependencies
+        run: npm ci --loglevel verbose
+      - name: Release
+        run: npx semantic-release --debug
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
