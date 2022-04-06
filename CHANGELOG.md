@@ -1,3 +1,10 @@
+## [3.2.5-rc.2](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.5-rc.1...v3.2.5-rc.2) (2022-04-06)
+
+
+### Bug Fixes
+
+* **pom:** fix maven publish command ([9e4cb00](https://github.com/xzima/maven-semantic-release-example/commit/9e4cb007d6f40fc2627f2ff588a76533abc60a1c))
+
 ## [3.2.5-rc.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.4...v3.2.5-rc.1) (2022-04-06)
 
 
