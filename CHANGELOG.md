@@ -1,3 +1,10 @@
+## [3.2.6-rc.2](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.6-rc.1...v3.2.6-rc.2) (2022-04-06)
+
+
+### Bug Fixes
+
+* **ci:** extend git push logic on prepare phase ([81d98c3](https://github.com/xzima/maven-semantic-release-example/commit/81d98c325da926f059bccea2254bebff66a25423))
+
 ## [3.2.6-rc.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.5...v3.2.6-rc.1) (2022-04-06)
 
 
