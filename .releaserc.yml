@@ -11,6 +11,9 @@ plugins:
   - - "@semantic-release/github"
     - assets:
         - "CHANGELOG.md"
+  - - "@semantic-release/git"
+    - assets:
+        - "CHANGELOG.md"
   - - "@semantic-release/exec"
     - publishCmd: |
         ./mvnw -B clean --debug
