@@ -13,6 +13,4 @@ plugins:
         - "CHANGELOG.md"
   - - "@semantic-release/exec"
     - publishCmd: |
-        git tag -a -f ${nextRelease.gitTag} ${nextRelease.gitTag} -F CHANGELOG.md
-        git push --force origin ${nextRelease.gitTag}
-        # commands that need an annotated tag to work
+        ./mvnw -B clean package
