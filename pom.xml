@@ -8,6 +8,7 @@
     <name>maven-semantic-release-example</name>
     <description>Example project to auto-deploy maven projects</description>
     <url>https://github.com/evansiroky/maven-semantic-release-example</url>
+    <inceptionYear>2022</inceptionYear>
     <properties>
         <java.version>11</java.version>
         <maven.version>3.8.4</maven.version>
@@ -19,6 +20,10 @@
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <!--==========================================-->
         <plugin.enforcer.version>3.0.0</plugin.enforcer.version>
+        <!-- license -->
+        <plugin.license.version>4.1</plugin.license.version>
+        <license.header>.github/LICENSE_HEADER.txt</license.header>
+        <license.strictCheck>true</license.strictCheck>
     </properties>
     <licenses>
         <license>
@@ -154,6 +159,47 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <!-- https://mycila.carbou.me/license-maven-plugin/ -->
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>${plugin.license.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.mycila</groupId>
+                        <artifactId>license-maven-plugin-git</artifactId>
+                        <!-- make sure you use the same version as license-maven-plugin -->
+                        <version>${plugin.license.version}</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <mapping>
+                        <kt>JAVADOC_STYLE</kt>
+                        <kts>JAVADOC_STYLE</kts>
+                    </mapping>
+                    <excludes>
+                        <exclude>docs/**</exclude>
+                        <exclude>**/.okhttpcache/**</exclude>
+                        <exclude>**/.run/**</exclude>
+                        <exclude>**/src/test/resources/**</exclude>
+                        <exclude>**/src/test/data/**</exclude>
+                        <exclude>**/src/main/license/**</exclude>
+                        <exclude>**/src/main/changelog/**</exclude>
+                        <exclude>pom.xml</exclude>
+                        <exclude>system.properties</exclude>
+                        <exclude>Procfile</exclude>
+                        <exclude>*.db</exclude>
+                        <exclude>**/META-INF/**</exclude>
+                        <exclude>**/robots.txt</exclude>
+                        <exclude>**/LICENSE*</exclude>
+                        <exclude>**/README*</exclude>
+                        <exclude>**/readme*</exclude>
+                        <exclude>**/.gitignore</exclude>
+                        <exclude>**/*.cfg</exclude>
+                        <exclude>**/*.conf</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
