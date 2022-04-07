@@ -1,3 +1,10 @@
+## [3.2.8-rc.3](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8-rc.2...v3.2.8-rc.3) (2022-04-07)
+
+
+### Bug Fixes
+
+* **license:** fix license template ([86a93d3](https://github.com/xzima/maven-semantic-release-example/commit/86a93d3c1fe0f6780ce2d0eb10117a36ef4e04d3))
+
 ## [3.2.8-rc.2](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8-rc.1...v3.2.8-rc.2) (2022-04-07)
 
 
