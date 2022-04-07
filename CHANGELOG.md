@@ -1,3 +1,11 @@
+## [3.2.8-rc.2](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8-rc.1...v3.2.8-rc.2) (2022-04-07)
+
+
+### Bug Fixes
+
+* **license:** add LICENSE.txt and fix pom ([f8fb8ef](https://github.com/xzima/maven-semantic-release-example/commit/f8fb8ef4693278a7794a7a0bbc6d08c99b252b3f))
+* **license:** add licenses third party generation logic ([478529d](https://github.com/xzima/maven-semantic-release-example/commit/478529db06efb1cb452d62324bf5612e8495f688))
+
 ## [3.2.8-rc.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.7...v3.2.8-rc.1) (2022-04-07)
 
 
