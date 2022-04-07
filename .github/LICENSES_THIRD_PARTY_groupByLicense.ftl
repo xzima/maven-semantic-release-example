@@ -38,22 +38,17 @@
 <#if licenseMap?size == 0>
   The project has no dependencies.
 <#else>
-  We uses third-party libraries which may be distributed under different
-  licenses. We have listed all of these third party libraries and their licenses
-  below. This file can be regenerated at any time by simply running:
+  We uses third-party libraries which may be distributed under different licenses.
+  We have listed all of these third party libraries and their licenses below.
 
-  mvn clean verify -Dthird.party.licenses=true
-
-  You must agree to the terms of these licenses, in addition to
-  source code license, in order to use this software.
+  You must agree to the terms of these licenses, in addition to source code license, in order to use this software.
 
   ---------------------------------------------------
   Third party Java libraries listed by License type.
 
-  PLEASE NOTE: Some dependencies may be listed under multiple licenses if they
-  are dual-licensed. This is especially true of anything listed as
-  "GNU General Public Library" below, as we actually does NOT allow for any
-  dependencies that are solely released under GPL terms.
+  PLEASE NOTE: Some dependencies may be listed under multiple licenses if they are dual-licensed.
+  This is especially true of anything listed as "GNU General Public Library" below,
+  as we actually does NOT allow for any dependencies that are solely released under GPL terms.
   ---------------------------------------------------
 <#list licenseMap as e>
   <#assign license = e.getKey()/>
