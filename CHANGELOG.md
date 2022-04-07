@@ -1,3 +1,10 @@
+## [3.2.8-rc.5](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8-rc.4...v3.2.8-rc.5) (2022-04-07)
+
+
+### Bug Fixes
+
+* **ci:** modify changelog commit logic and github release assets ([1cd8bfd](https://github.com/xzima/maven-semantic-release-example/commit/1cd8bfd6bf50606955fdc0b8a1b2c8b68a9920b1))
+
 ## [3.2.8-rc.4](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8-rc.3...v3.2.8-rc.4) (2022-04-07)
 
 
