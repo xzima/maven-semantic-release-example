@@ -31,10 +31,10 @@ plugins:
         ./mvnw -B clean license:check package
   - - "@semantic-release/git"
     - assets:
-        - "."
-        - "${branch.type === 'prerelease'?'!':''}CHANGELOG.md"
+        - - "."
+          - "${branch.type === 'prerelease'?'!':''}CHANGELOG.md"
   - - "@semantic-release/github"
     - assets:
-        - "target/*.jar"
-        - "!target/*javadoc.jar"
-        - "!target/*sources.jar"
+        - - "target/*.jar"
+          - "!target/*javadoc.jar"
+          - "!target/*sources.jar"
