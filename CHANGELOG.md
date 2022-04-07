@@ -1,3 +1,27 @@
+## [3.2.8-rc.3](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8-rc.2...v3.2.8-rc.3) (2022-04-07)
+
+
+### Bug Fixes
+
+* **license:** fix license template ([86a93d3](https://github.com/xzima/maven-semantic-release-example/commit/86a93d3c1fe0f6780ce2d0eb10117a36ef4e04d3))
+
+## [3.2.8-rc.2](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8-rc.1...v3.2.8-rc.2) (2022-04-07)
+
+
+### Bug Fixes
+
+* **license:** add LICENSE.txt and fix pom ([f8fb8ef](https://github.com/xzima/maven-semantic-release-example/commit/f8fb8ef4693278a7794a7a0bbc6d08c99b252b3f))
+* **license:** add licenses third party generation logic ([478529d](https://github.com/xzima/maven-semantic-release-example/commit/478529db06efb1cb452d62324bf5612e8495f688))
+
+## [3.2.8-rc.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.7...v3.2.8-rc.1) (2022-04-07)
+
+
+### Bug Fixes
+
+* **ci:** extend workflow ([dc15400](https://github.com/xzima/maven-semantic-release-example/commit/dc15400bb6ac4b0bffd321d806a9d2986b9e4854))
+* **ci:** rollback pipeline ([1815005](https://github.com/xzima/maven-semantic-release-example/commit/181500543c08b130fdc09f965c095cdbcb474002))
+* **license:** add license header check logic to ci ([3af33d2](https://github.com/xzima/maven-semantic-release-example/commit/3af33d2559eab4734971764823b60e7486973d6e))
+
 ## [3.2.7](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.6...v3.2.7) (2022-04-06)
 
 

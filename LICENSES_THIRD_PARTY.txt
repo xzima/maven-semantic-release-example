@@ -1,0 +1,39 @@
+
+  We uses third-party libraries which may be distributed under different licenses.
+  We have listed all of these third party libraries and their licenses below.
+
+  You must agree to the terms of these licenses, in addition to source code license, in order to use this software.
+
+  ---------------------------------------------------
+  Third party Java libraries listed by License type.
+
+  PLEASE NOTE: Some dependencies may be listed under multiple licenses if they are dual-licensed.
+  This is especially true of anything listed as "GNU General Public Library" below,
+  as we actually does NOT allow for any dependencies that are solely released under GPL terms.
+  ---------------------------------------------------
+
+  Apache Software License, Version 2.0:
+
+  * config (com.typesafe:config:1.4.1 - https://github.com/lightbend/config)
+  * ktor-http-cio (io.ktor:ktor-http-cio-jvm:1.6.8 - https://github.com/ktorio/ktor)
+  * ktor-http (io.ktor:ktor-http-jvm:1.6.8 - https://github.com/ktorio/ktor)
+  * ktor-io (io.ktor:ktor-io-jvm:1.6.8 - https://github.com/ktorio/ktor)
+  * ktor-network (io.ktor:ktor-network-jvm:1.6.8 - https://github.com/ktorio/ktor)
+  * ktor-server-cio (io.ktor:ktor-server-cio:1.6.8 - https://github.com/ktorio/ktor)
+  * ktor-server-core (io.ktor:ktor-server-core:1.6.8 - https://github.com/ktorio/ktor)
+  * ktor-server-host-common (io.ktor:ktor-server-host-common:1.6.8 - https://github.com/ktorio/ktor)
+  * ktor-utils (io.ktor:ktor-utils-jvm:1.6.8 - https://github.com/ktorio/ktor)
+  * Apache Commons Lang (org.apache.commons:commons-lang3:3.12.0 - https://commons.apache.org/proper/commons-lang/)
+  * jansi (org.fusesource.jansi:jansi:2.4.0 - http://fusesource.github.io/jansi)
+  * IntelliJ IDEA Annotations (org.jetbrains:annotations:13.0 - http://www.jetbrains.org)
+  * Kotlin Reflect (org.jetbrains.kotlin:kotlin-reflect:1.6.20 - https://kotlinlang.org/)
+  * Kotlin Stdlib (org.jetbrains.kotlin:kotlin-stdlib:1.6.20 - https://kotlinlang.org/)
+  * Kotlin Stdlib Common (org.jetbrains.kotlin:kotlin-stdlib-common:1.6.20 - https://kotlinlang.org/)
+  * Kotlin Stdlib Jdk7 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.20 - https://kotlinlang.org/)
+  * Kotlin Stdlib Jdk8 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20 - https://kotlinlang.org/)
+  * kotlinx-coroutines-core (org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2-native-mt - https://github.com/Kotlin/kotlinx.coroutines)
+  * kotlinx-coroutines-jdk8 (org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.5.2-native-mt - https://github.com/Kotlin/kotlinx.coroutines)
+
+  MIT License:
+
+  * SLF4J API Module (org.slf4j:slf4j-api:1.7.36 - http://www.slf4j.org)
