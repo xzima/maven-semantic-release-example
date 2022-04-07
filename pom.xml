@@ -39,6 +39,10 @@
             <organization>Conveyal</organization>
             <organizationUrl>https://conveyal.com/</organizationUrl>
         </developer>
+        <developer>
+            <name>Alex Zima</name>
+            <email>xzima@ro.ru</email>
+        </developer>
     </developers>
 
     <!-- Define where the source code for this project lives -->
@@ -123,7 +127,6 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <!-- Include zipped source code in releases -->
                 <groupId>org.apache.maven.plugins</groupId>
@@ -160,6 +163,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <!-- https://mycila.carbou.me/license-maven-plugin/ -->
                 <groupId>com.mycila</groupId>
@@ -201,8 +205,57 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <!-- https://www.mojohaus.org/license-maven-plugin/ -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>2.0.0</version>
+                <configuration>
+                    <excludedScopes>test</excludedScopes>
+                    <includeOptional>false</includeOptional>
+                    <outputDirectory>${project.basedir}</outputDirectory>
+                    <thirdPartyFilename>LICENSES_THIRD_PARTY.txt</thirdPartyFilename>
+                    <!-- For Licenses which are "Unknown" by Maven, load them from a properties file -->
+                    <useMissingFile>true</useMissingFile>
+                    <missingFile>.github/LICENSES_THIRD_PARTY.properties</missingFile>
+                    <!-- License names that should all be merged into the *first* listed name -->
+                    <licenseMergesFile>.github/LICENSE_MERGES.txt</licenseMergesFile>
+                    <!-- Use the template which groups all dependencies by their License type (easier to read!). -->
+                    <!-- SEE: https://github.com/mojohaus/license-maven-plugin/tree/master/src/main/resources/org/codehaus/mojo/license -->
+                    <fileTemplate>.github/LICENSES_THIRD_PARTY_groupByLicense.ftl</fileTemplate>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}</directory>
+                                    <includes>
+                                        <include>LICENSES_THIRD_PARTY.txt</include>
+                                        <include>LICENSE.txt</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
+
     <dependencies>
         <!-- JUnit is a Java testing framework.
           It is optional in the workflow of deploying with maven-semantic-release. -->
@@ -212,5 +265,32 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.ktor</groupId>
+            <artifactId>ktor-server-cio</artifactId>
+        </dependency>
     </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.ktor</groupId>
+                <artifactId>ktor-bom</artifactId>
+                <version>1.6.8</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-bom</artifactId>
+                <version>1.6.20</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
