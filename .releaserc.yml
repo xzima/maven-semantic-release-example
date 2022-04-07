@@ -30,9 +30,7 @@ plugins:
       publishCmd: |
         ./mvnw -B clean license:check package
   - - "@semantic-release/git"
-    - assets:
-        - - "."
-          - "${branch.type === 'prerelease'?'!':''}CHANGELOG.md"
+    - assets: "."
   - - "@semantic-release/github"
     - assets:
         - - "target/*.jar"
