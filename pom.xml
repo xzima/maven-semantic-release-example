@@ -201,8 +201,29 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <!-- https://www.mojohaus.org/license-maven-plugin/ -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>2.0.0</version>
+                <configuration>
+                    <excludedScopes>test</excludedScopes>
+                    <includeOptional>false</includeOptional>
+                    <outputDirectory>${project.basedir}</outputDirectory>
+                    <thirdPartyFilename>LICENSES_THIRD_PARTY.txt</thirdPartyFilename>
+                    <!-- For Licenses which are "Unknown" by Maven, load them from a properties file -->
+                    <useMissingFile>true</useMissingFile>
+                    <missingFile>.github/LICENSES_THIRD_PARTY.properties</missingFile>
+                    <!-- License names that should all be merged into the *first* listed name -->
+                    <licenseMergesFile>.github/LICENSE_MERGES.txt</licenseMergesFile>
+                    <!-- Use the template which groups all dependencies by their License type (easier to read!). -->
+                    <!-- SEE: https://github.com/mojohaus/license-maven-plugin/tree/master/src/main/resources/org/codehaus/mojo/license -->
+                    <fileTemplate>.github/LICENSES_THIRD_PARTY_groupByLicense.ftl</fileTemplate>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
     <dependencies>
         <!-- JUnit is a Java testing framework.
           It is optional in the workflow of deploying with maven-semantic-release. -->
@@ -211,6 +232,16 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.ktor</groupId>
+            <artifactId>ktor-server-cio</artifactId>
+            <version>1.6.8</version>
         </dependency>
     </dependencies>
 </project>
