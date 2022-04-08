@@ -18,3 +18,16 @@ index 267ef1d..c5c6b6c 100644
    debug('add file to git index', shell);
  }
  
+diff --git a/node_modules/@semantic-release/git/lib/prepare.js b/node_modules/@semantic-release/git/lib/prepare.js
+index 0e85b00..d777334 100644
+--- a/node_modules/@semantic-release/git/lib/prepare.js
++++ b/node_modules/@semantic-release/git/lib/prepare.js
+@@ -64,7 +64,7 @@ module.exports = async (pluginConfig, context) => {
+       message
+         ? template(message)({branch: branch.name, lastRelease, nextRelease})
+         : `chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}`,
+-      {env, cwd}
++      {env, cwd, reject: false}
+     );
+     await push(repositoryUrl, branch.name, {env, cwd});
+     logger.log('Prepared Git release: %s', nextRelease.gitTag);
