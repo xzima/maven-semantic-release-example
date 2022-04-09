@@ -6,12 +6,12 @@ on:
   push:
     branches:
       - master
-      - dev
+      - rc
   pull_request:
     types: [ opened, synchronize, reopened ]
     branches:
       - master
-      - dev
+      - rc
 
 permissions:
   checks: write
