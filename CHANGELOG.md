@@ -1,3 +1,15 @@
+## [3.2.9](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8...v3.2.9) (2022-04-09)
+
+
+### Bug Fixes
+
+* **ci:** add push access to protected branches ([b0b205c](https://github.com/xzima/maven-semantic-release-example/commit/b0b205c50d1f471ab87d045f49cb84b3dfbba208)), closes [/github.com/semantic-release/github/issues/175#issuecomment-757448750](https://github.com//github.com/semantic-release/github/issues/175/issues/issuecomment-757448750)
+* **ci:** disable changelog generation for prerelease ([1640cbe](https://github.com/xzima/maven-semantic-release-example/commit/1640cbea8d82ca5f964b157003f3ec0716249d45))
+* **ci:** disable changelog generation for prerelease ([3baeed4](https://github.com/xzima/maven-semantic-release-example/commit/3baeed4a14ddf9343970c77279898e2518050db1))
+* **ci:** ignore ci skip commit verification ([9c0857e](https://github.com/xzima/maven-semantic-release-example/commit/9c0857e7ed1e184bc81bf9cf5010bd690034331b))
+* **ci:** modify changelog commit logic and github release assets ([1cd8bfd](https://github.com/xzima/maven-semantic-release-example/commit/1cd8bfd6bf50606955fdc0b8a1b2c8b68a9920b1))
+* **ci:** modify changelog commit logic and github release assets ([1ef5a37](https://github.com/xzima/maven-semantic-release-example/commit/1ef5a3731bd0ff83d8399318e2b3bdcb24fbde46))
+
 ## [3.2.8-rc.5](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.8-rc.4...v3.2.8-rc.5) (2022-04-07)
 
 
