@@ -1,0 +1,82 @@
+<dependencies>
+  <dependency name='org.jetbrains:annotations:13.0'>
+    <file>annotations-13.0.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='io.ktor:ktor-utils-jvm:1.6.8'>
+    <file>ktor-utils-jvm-1.6.8.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='io.ktor:ktor-http-jvm:1.6.8'>
+    <file>ktor-http-jvm-1.6.8.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.fusesource.jansi:jansi:2.4.0'>
+    <file>jansi-2.4.0.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='io.ktor:ktor-server-cio:1.6.8'>
+    <file>ktor-server-cio-jvm-1.6.8.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.20'>
+    <file>kotlin-stdlib-jdk7-1.6.20.jar</file>
+    <license name='The Apache License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.jetbrains.kotlin:kotlin-reflect:1.6.20'>
+    <file>kotlin-reflect-1.6.20.jar</file>
+    <license name='The Apache License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='com.typesafe:config:1.4.1'>
+    <file>config-1.4.1.jar</file>
+    <license name='Apache-2.0' url='https://www.apache.org/licenses/LICENSE-2.0' />
+  </dependency>
+  <dependency name='org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20'>
+    <file>kotlin-stdlib-jdk8-1.6.20.jar</file>
+    <license name='The Apache License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.apache.commons:commons-lang3:3.12.0'>
+    <file>commons-lang3-3.12.0.jar</file>
+    <license name='Apache License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.jetbrains.kotlin:kotlin-stdlib:1.6.20'>
+    <file>kotlin-stdlib-1.6.20.jar</file>
+    <license name='The Apache License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.slf4j:slf4j-api:1.7.36'>
+    <file>slf4j-api-1.7.36.jar</file>
+    <license name='MIT License' url='http://www.opensource.org/licenses/mit-license.php' />
+  </dependency>
+  <dependency name='io.ktor:ktor-server-host-common:1.6.8'>
+    <file>ktor-server-host-common-jvm-1.6.8.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='io.ktor:ktor-server-core:1.6.8'>
+    <file>ktor-server-core-jvm-1.6.8.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2-native-mt'>
+    <file>kotlinx-coroutines-core-jvm-1.5.2-native-mt.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='io.ktor:ktor-network-jvm:1.6.8'>
+    <file>ktor-network-jvm-1.6.8.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.jetbrains.kotlin:kotlin-stdlib-common:1.6.20'>
+    <file>kotlin-stdlib-common-1.6.20.jar</file>
+    <license name='The Apache License, Version 2.0' url='http://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='io.ktor:ktor-http-cio-jvm:1.6.8'>
+    <file>ktor-http-cio-jvm-1.6.8.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='io.ktor:ktor-io-jvm:1.6.8'>
+    <file>ktor-io-jvm-1.6.8.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+  <dependency name='org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.5.2-native-mt'>
+    <file>kotlinx-coroutines-jdk8-1.5.2-native-mt.jar</file>
+    <license name='The Apache Software License, Version 2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt' />
+  </dependency>
+</dependencies>
