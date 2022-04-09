@@ -4,4 +4,4 @@ An example java project that is automatically deployed to maven central using [m
 
 This example project is setup for use with maven-semantic-release `v5.x.x` and the latest version of semantic-release.
 
-A
+AA
