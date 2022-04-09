@@ -1,3 +1,10 @@
+## [3.2.14](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.13...v3.2.14) (2022-04-09)
+
+
+### Bug Fixes
+
+* **ci:** rename dev to rc ([51a1db4](https://github.com/xzima/maven-semantic-release-example/commit/51a1db44f52537d44bd8f61e7ea3be601d5a2140))
+
 ## [3.2.13](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.12...v3.2.13) (2022-04-09)
 
 
