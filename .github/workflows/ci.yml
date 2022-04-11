@@ -97,3 +97,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Do something when a new release published
+        run: |
+          echo ${{ steps.release.outputs.new_release_published }}
+          echo ${{ steps.release.outputs.new_release_version }}
+          echo ${{ steps.release.outputs.branch_type }}
