@@ -1,3 +1,10 @@
+## [3.2.20](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.19...v3.2.20) (2022-04-11)
+
+
+### Bug Fixes
+
+* **ci:** fix push rc after release merge logic ([10ae775](https://github.com/xzima/maven-semantic-release-example/commit/10ae775d5b7e21b114eca37a5df1aaf60d1a381d))
+
 ## [3.2.19](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.18...v3.2.19) (2022-04-11)
 
 
