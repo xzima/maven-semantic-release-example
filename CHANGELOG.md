@@ -1,3 +1,11 @@
+## [3.2.21](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.20...v3.2.21) (2022-04-11)
+
+
+### Bug Fixes
+
+* test 7 ([72196b2](https://github.com/xzima/maven-semantic-release-example/commit/72196b2e91900218dcf8e5e56bfa88f4f0c766bd))
+* test 7 ([a8ad834](https://github.com/xzima/maven-semantic-release-example/commit/a8ad834bd9e2e8bb5bedc03186dffb1d935eccab))
+
 ## [3.2.20](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.19...v3.2.20) (2022-04-11)
 
 
