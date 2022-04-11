@@ -27,7 +27,7 @@ plugins:
     - prepareCmd: |
         ./mvnw -B com.mycila:license-maven-plugin:4.1:format org.codehaus.mojo:license-maven-plugin:2.0.0:add-third-party
       publishCmd: |
-        ${branch.type !== 'prerelease'?'git push -f HEAD:rc':''}
+        ${branch.type !== 'prerelease'?('git push '+options.repositoryUrl+' -f HEAD:rc'):''}
         ./mvnw -B clean license:check package
   - - "@semantic-release/git"
     - assets: "."
