@@ -40,8 +40,8 @@ plugins:
           - "!target/*javadoc.jar"
           - "!target/*sources.jar"
   - - "@saithodev/semantic-release-backmerge"
-      - clearWorkspace: true
-        branches:
-          - rc
-        backmergeStrategy: 'merge'
-        mergeMode: 'ours'
+    - clearWorkspace: true
+      branches:
+        - rc
+      backmergeStrategy: 'merge'
+      mergeMode: 'ours'
