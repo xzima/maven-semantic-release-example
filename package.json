@@ -5,10 +5,11 @@
     "postinstall": "patch-package"
   },
   "devDependencies": {
-    "semantic-release": "^19.0.2",
+    "@saithodev/semantic-release-backmerge": "^2.1.2",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "patch-package": "^6.4.7"
+    "patch-package": "^6.4.7",
+    "semantic-release": "^19.0.2"
   }
 }

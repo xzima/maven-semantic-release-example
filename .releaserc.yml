@@ -27,11 +27,11 @@ plugins:
     - prepareCmd: |
         ./mvnw -B com.mycila:license-maven-plugin:4.1:format org.codehaus.mojo:license-maven-plugin:2.0.0:add-third-party
       publishCmd: |
-        ${branch.type !== 'prerelease'?('git push '+options.repositoryUrl+' HEAD:rc'):''}
+        ./mvnw -B clean license:check package
+      successCmd: |
         echo "::set-output name=new_release_published::true"
         echo "::set-output name=new_release_version::${nextRelease.version}"
         echo "::set-output name=branch_type::${branch.type}"
-        ./mvnw -B clean license:check package
   - - "@semantic-release/git"
     - assets: "."
   - - "@semantic-release/github"
@@ -39,3 +39,9 @@ plugins:
         - - "target/*.jar"
           - "!target/*javadoc.jar"
           - "!target/*sources.jar"
+  - - "@saithodev/semantic-release-backmerge"
+      - clearWorkspace: true
+        branches:
+          - rc
+        backmergeStrategy: 'merge'
+        mergeMode: 'ours'
