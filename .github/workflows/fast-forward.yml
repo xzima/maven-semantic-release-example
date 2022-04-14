@@ -1,0 +1,20 @@
+name: Merge Pull Request
+
+on:
+  issue_comment:
+    types: [ created ]
+
+jobs:
+  fast_forward_job:
+    name: Fast Forward
+    if: github.event.issue.pull_request != '' && github.event.comment.body == '/ff'
+    runs-on: ubuntu-latest
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Basic use case example
+      - name: Fast Forward PR
+        uses: endre-spotlab/fast-forward-js-action@2.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
