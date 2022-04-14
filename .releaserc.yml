@@ -46,4 +46,3 @@ plugins:
       backmergeStrategy: 'merge'
       allowSameBranchMerge: true
       mergeMode: 'ours'
-      forcePush: true
