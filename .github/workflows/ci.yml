@@ -10,6 +10,7 @@ on:
   pull_request:
     types: [ opened, synchronize, reopened ]
     branches:
+      - master
       - rc
 
 permissions:
@@ -20,6 +21,7 @@ permissions:
 
 jobs:
   commit-lint:
+    if: ${{ github.event_name != 'pull_request' || !(github.head_ref == 'rc' && github.base_ref == 'master') }}
     name: Lint Commit Messages
     runs-on: ubuntu-latest
     steps:
