@@ -1,3 +1,13 @@
+## [3.2.26](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.25...v3.2.26) (2022-04-14)
+
+
+### Bug Fixes
+
+* **ci:** drop gitflow and configure backmerge ([1e0bd77](https://github.com/xzima/maven-semantic-release-example/commit/1e0bd7741893a7e234bd9fab7ba19d450c9b2612))
+* **ci:** fix backmerge in same branch ([5cad637](https://github.com/xzima/maven-semantic-release-example/commit/5cad6377d23df98b5561fe5f71293a82c51f1840))
+* **ci:** fix duplicate workflow steps ([bd4db31](https://github.com/xzima/maven-semantic-release-example/commit/bd4db31719489a728307032845a634910c27d8c4))
+* **ci:** refactoring ([9377355](https://github.com/xzima/maven-semantic-release-example/commit/9377355ae14d531091cd2bbe45bbd8390d6e206d))
+
 ## [3.2.25](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.24...v3.2.25) (2022-04-14)
 
 
