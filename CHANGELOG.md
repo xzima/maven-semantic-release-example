@@ -1,3 +1,10 @@
+## [3.2.30](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.29...v3.2.30) (2022-04-14)
+
+
+### Bug Fixes
+
+* **ci:** hotfix ([25ec30c](https://github.com/xzima/maven-semantic-release-example/commit/25ec30c24fa4933cd9fa19aa36ccd1bc3ea9a013))
+
 ## [3.2.29](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.28...v3.2.29) (2022-04-14)
 
 
