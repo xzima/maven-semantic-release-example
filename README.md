@@ -6,4 +6,4 @@ This example project is setup for use with maven-semantic-release `v5.x.x` and t
 
 
 QQ
-B
+
