@@ -1,3 +1,10 @@
+## [3.2.25](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.24...v3.2.25) (2022-04-14)
+
+
+### Bug Fixes
+
+* **ci:** add gitflow.yml workflow ([e2413fc](https://github.com/xzima/maven-semantic-release-example/commit/e2413fc10f0d908d2aa65c69af13feb685239056))
+
 ## [3.2.24](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.23...v3.2.24) (2022-04-11)
 
 
