@@ -1,3 +1,10 @@
+## [3.2.38](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.37...v3.2.38) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try git-flow-merge-action ([e586ff0](https://github.com/xzima/maven-semantic-release-example/commit/e586ff0779be69870bb7c690c1cf5aa52f05364b))
+
 ## [3.2.37](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.36...v3.2.37) (2022-04-15)
 
 
