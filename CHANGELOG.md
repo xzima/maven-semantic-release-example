@@ -1,3 +1,10 @@
+## [3.2.42](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.41...v3.2.42) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try merge-branch ([5f28806](https://github.com/xzima/maven-semantic-release-example/commit/5f288062279a49fd7b1e78d32239c05d53de7476))
+
 ## [3.2.41](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.40...v3.2.41) (2022-04-15)
 
 
