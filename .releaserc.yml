@@ -37,7 +37,7 @@ plugins:
         if git ls-remote --exit-code --heads origin rc; then
           echo "exist"
           git checkout -B rc
-          git merge -m 'chore(release): Sync with next release [skip ci]' origin/rc
+          git merge -X ours -m 'chore(release): Sync with next release [skip ci]' origin/rc
           git push
         else
           echo "NOT exist"
