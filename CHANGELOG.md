@@ -1,3 +1,10 @@
+## [3.2.43](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.42...v3.2.43) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try gitflow ([83bc1e0](https://github.com/xzima/maven-semantic-release-example/commit/83bc1e0c9734c3886603a15acf9afd25f6c62c1a))
+
 ## [3.2.42](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.41...v3.2.42) (2022-04-15)
 
 
