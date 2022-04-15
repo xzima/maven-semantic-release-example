@@ -1,3 +1,12 @@
+## [3.2.35](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.34...v3.2.35) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** add fast-forward merge action ([13221e1](https://github.com/xzima/maven-semantic-release-example/commit/13221e15b60cf0d309b87b0d2b09ac9286effb38))
+* **ci:** clear gitflow.yml ([84d841c](https://github.com/xzima/maven-semantic-release-example/commit/84d841c4adaf40969729614e6d6947e99849cfba))
+* **ci:** test 9 ([668d509](https://github.com/xzima/maven-semantic-release-example/commit/668d50905272c93334afd0518a46f07e12634b54))
+
 ## [3.2.34](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.33...v3.2.34) (2022-04-14)
 
 
