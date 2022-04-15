@@ -32,6 +32,7 @@ plugins:
         echo "::set-output name=new_release_published::true"
         echo "::set-output name=new_release_version::${nextRelease.version}"
         echo "::set-output name=branch_type::${branch.type}"
+        echo "::set-output name=branch_name::${branch.name}"
   - - "@semantic-release/git"
     - assets: "."
   - - "@semantic-release/github"
@@ -39,10 +40,4 @@ plugins:
         - - "target/*.jar"
           - "!target/*javadoc.jar"
           - "!target/*sources.jar"
-  - - "@saithodev/semantic-release-backmerge"
-    - clearWorkspace: true
-      branches:
-        - rc
-      backmergeStrategy: 'merge'
-      allowSameBranchMerge: true
-      mergeMode: 'ours'
+
