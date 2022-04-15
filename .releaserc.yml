@@ -35,10 +35,12 @@ plugins:
         echo "::set-output name=branch_name::${branch.name}"
         
         if git ls-remote --exit-code --heads origin rc; then
+          echo "exist"
           git checkout rc
           git merge -m 'chore(release): Sync with next release [skip ci]' origin/rc
           git push rc
         else
+          echo "NOT exist"
           git push HEAD:rc
         fi
   - - "@semantic-release/git"
