@@ -41,7 +41,8 @@ plugins:
           git push rc
         else
           echo "NOT exist"
-          git push HEAD:rc
+          git checkout rc
+          git push rc
         fi
   - - "@semantic-release/git"
     - assets: "."
