@@ -34,7 +34,7 @@ plugins:
         echo "::set-output name=branch_type::${branch.type}"
         echo "::set-output name=branch_name::${branch.name}"
         
-        if git ls-remote --heads origin rc | wc -l; then
+        if git ls-remote --exit-code --heads origin rc; then
           git checkout rc
           git merge -m 'chore(release): Sync with next release [skip ci]' origin/rc
           git push rc
