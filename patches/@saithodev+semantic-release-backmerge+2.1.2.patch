@@ -1,16 +1,7 @@
 diff --git a/node_modules/@saithodev/semantic-release-backmerge/dist/helpers/git.js b/node_modules/@saithodev/semantic-release-backmerge/dist/helpers/git.js
-index d87c6eb..fd43de8 100644
+index d87c6eb..b533a55 100644
 --- a/node_modules/@saithodev/semantic-release-backmerge/dist/helpers/git.js
 +++ b/node_modules/@saithodev/semantic-release-backmerge/dist/helpers/git.js
-@@ -113,7 +113,7 @@ class Git {
-      */
-     checkout(branch) {
-         return __awaiter(this, void 0, void 0, function* () {
--            yield execa('git', ['checkout', '-B', branch], this.execaOpts);
-+            yield execa('git', ['checkout', '-B', branch, `origin/${branch}`], this.execaOpts);
-         });
-     }
-     /**
 @@ -155,6 +155,7 @@ class Git {
              const args = ['merge'];
              if (mergeMode !== 'none') {
