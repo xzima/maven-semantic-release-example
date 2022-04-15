@@ -20,48 +20,48 @@ permissions:
   pull-requests: write
 
 jobs:
-  commit-lint:
-    if: ${{ github.event_name != 'pull_request' || !(github.head_ref == 'rc' && github.base_ref == 'master') }}
-    name: Lint Commit Messages
-    runs-on: ubuntu-latest
-    steps:
-      - name: init repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+#  commit-lint:
+#    if: ${{ github.event_name != 'pull_request' || !(github.head_ref == 'rc' && github.base_ref == 'master') }}
+#    name: Lint Commit Messages
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: init repo
+#        uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#
+#      - uses: wagoid/commitlint-github-action@v4.1.9
+#        with:
+#          configFile: .github/commitlint.config.js
+#          helpURL: https://www.conventionalcommits.org
 
-      - uses: wagoid/commitlint-github-action@v4.1.9
-        with:
-          configFile: .github/commitlint.config.js
-          helpURL: https://www.conventionalcommits.org
-
-  run-test:
-    needs: [ commit-lint ]
-    name: Run tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: init repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: init jvm
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'temurin'
-          java-version: '11'
-          cache: 'maven'
-
-      - run: ./mvnw clean test
-
-      - name: Publish Unit Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v1
-        if: always()
-        with:
-          files: "target/surefire-reports/TEST-*.xml"
+#  run-test:
+#    needs: [ commit-lint ]
+#    name: Run tests
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: init repo
+#        uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#
+#      - name: init jvm
+#        uses: actions/setup-java@v2
+#        with:
+#          distribution: 'temurin'
+#          java-version: '11'
+#          cache: 'maven'
+#
+#      - run: ./mvnw clean test
+#
+#      - name: Publish Unit Test Results
+#        uses: EnricoMi/publish-unit-test-result-action@v1
+#        if: always()
+#        with:
+#          files: "target/surefire-reports/TEST-*.xml"
 
   release:
-    needs: [ run-test ]
+#    needs: [ run-test ]
     name: Release
     runs-on: ubuntu-latest
     outputs:
@@ -73,12 +73,12 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: init jvm
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'temurin'
-          java-version: '11'
-          cache: 'maven'
+#      - name: init jvm
+#        uses: actions/setup-java@v2
+#        with:
+#          distribution: 'temurin'
+#          java-version: '11'
+#          cache: 'maven'
 
       - name: init npm
         uses: actions/setup-node@v3
@@ -106,18 +106,15 @@ jobs:
           echo ${{ steps.release.outputs.branch_type }}
           echo ${{ steps.release.outputs.branch_name }}
 
-      - uses: yanamura/git-flow-merge-action@v1
+      - name: Nightly Merge
+        if: steps.release.outputs.branch_name == 'master'
+        uses: robotology/gh-action-nightly-merge@v1.3.1
         with:
-          ### GITHUB_TOKEN.(required)
-          github_token: ${{ secrets.GH_TOKEN }}
-
-          ### branch name which merged to develop and master branch.(required)
-          ### ex. release/1.1.0, hotfix_branch
-          branch: ${{ steps.release.outputs.branch_name }}
-
-          ### develop branch name. default: develop (optional).
-          develop_branch: 'rc'
-
-          ### main branch name. default: master (optional).
-  #        main_branch: 'main'
+          stable_branch: 'master'
+          development_branch: 'rc'
+          allow_ff: true
+          push_token: GH_TOKEN
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
