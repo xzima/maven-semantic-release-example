@@ -109,7 +109,7 @@ jobs:
       - uses: yanamura/git-flow-merge-action@v1
         with:
           ### GITHUB_TOKEN.(required)
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
 
           ### branch name which merged to develop and master branch.(required)
           ### ex. release/1.1.0, hotfix_branch
