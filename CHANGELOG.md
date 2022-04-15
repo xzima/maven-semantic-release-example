@@ -1,3 +1,10 @@
+## [3.2.40](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.39...v3.2.40) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try gh-action-nightly-merge ([a14e4ba](https://github.com/xzima/maven-semantic-release-example/commit/a14e4bae042b3ee57b49752f08446941e4e9c8f5))
+
 ## [3.2.39](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.38...v3.2.39) (2022-04-15)
 
 
