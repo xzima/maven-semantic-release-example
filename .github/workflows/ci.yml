@@ -106,16 +106,12 @@ jobs:
           echo ${{ steps.release.outputs.branch_type }}
           echo ${{ steps.release.outputs.branch_name }}
 
-      - name: Nightly Merge
+      - name: Merge staging -> uat
         if: steps.release.outputs.branch_name == 'master'
-        uses: robotology/gh-action-nightly-merge@v1.3.1
+        uses: devmasx/merge-branch@1.4.0
         with:
-          stable_branch: 'master'
-          development_branch: 'rc'
-          allow_ff: true
-          push_token: GH_TOKEN
-          allow_forks: true
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          type: now
+          from_branch: master
+          target_branch: rc
+          github_token: ${{ secrets.GH_TOKEN }}
 
