@@ -2,6 +2,7 @@ name: Gitflow
 on:
   push:
     branches:
+      - master
       - rc
 
 jobs:
@@ -14,5 +15,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           release: rc # The `release` branch.
           master: master # The `master` branch.
-          label: release # The pull request label.
+          dev: rc # The `dev` branch.
+          label: gitflow # The pull request label.
           auto-merge: false # If `true`, will try to automatically merge pull requests.

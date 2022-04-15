@@ -106,12 +106,4 @@ jobs:
           echo ${{ steps.release.outputs.branch_type }}
           echo ${{ steps.release.outputs.branch_name }}
 
-      - name: Merge staging -> uat
-        if: steps.release.outputs.branch_name == 'master'
-        uses: devmasx/merge-branch@1.4.0
-        with:
-          type: now
-          from_branch: master
-          target_branch: rc
-          github_token: ${{ secrets.GH_TOKEN }}
 
