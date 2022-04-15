@@ -114,6 +114,7 @@ jobs:
           development_branch: 'rc'
           allow_ff: true
           push_token: GH_TOKEN
+          allow_forks: true
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
