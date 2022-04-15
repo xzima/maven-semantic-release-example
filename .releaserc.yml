@@ -38,11 +38,11 @@ plugins:
           echo "exist"
           git checkout -B rc
           git merge -m 'chore(release): Sync with next release [skip ci]' origin/rc
-          git push rc
+          git push
         else
           echo "NOT exist"
           git checkout -B rc
-          git push rc
+          git push
         fi
   - - "@semantic-release/git"
     - assets: "."
