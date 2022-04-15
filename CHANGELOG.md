@@ -1,3 +1,10 @@
+## [3.2.51](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.50...v3.2.51) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try custom code ([ef4abea](https://github.com/xzima/maven-semantic-release-example/commit/ef4abea03bfde568beab7ef3050fc9a2a8e011b5))
+
 ## [3.2.50](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.49...v3.2.50) (2022-04-15)
 
 
