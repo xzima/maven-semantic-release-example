@@ -1,3 +1,10 @@
+## [3.2.41](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.40...v3.2.41) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** allow_forks ([4c481ff](https://github.com/xzima/maven-semantic-release-example/commit/4c481fff040b02eea66dbd3c18dea2698e59e16d))
+
 ## [3.2.40](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.39...v3.2.40) (2022-04-15)
 
 
