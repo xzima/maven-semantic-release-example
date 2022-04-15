@@ -1,3 +1,53 @@
+## [3.2.54](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.53...v3.2.54) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try custom code ([a17d427](https://github.com/xzima/maven-semantic-release-example/commit/a17d42723b07a14be9a8ebb01928d78b0c8bdbfd))
+
+## [3.2.53](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.52...v3.2.53) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try gitflow release branch ([e110ad3](https://github.com/xzima/maven-semantic-release-example/commit/e110ad39c63e548b74e37e8092657fa723a86439))
+
+## [3.2.52](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.51...v3.2.52) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try custom code ([7a4879f](https://github.com/xzima/maven-semantic-release-example/commit/7a4879ffb88cf99f45afef2f83dea30b7c5afc2d))
+
+## [3.2.51](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.50...v3.2.51) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try custom code ([ef4abea](https://github.com/xzima/maven-semantic-release-example/commit/ef4abea03bfde568beab7ef3050fc9a2a8e011b5))
+
+## [3.2.50](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.49...v3.2.50) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try custom code ([cceded7](https://github.com/xzima/maven-semantic-release-example/commit/cceded7386eea7dd251e704d5b0e0266576d4263))
+
+## [3.2.49](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.48...v3.2.49) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try custom code ([8bada90](https://github.com/xzima/maven-semantic-release-example/commit/8bada90c5a988f747a30254574fdf299081e7e7c))
+* **ci:** try custom code ([1937258](https://github.com/xzima/maven-semantic-release-example/commit/193725894b0a745b4dc34ed35e1e91dc8652e1cf))
+
+## [3.2.48](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.47...v3.2.48) (2022-04-15)
+
+
+### Bug Fixes
+
+* **ci:** try custom code ([a52a569](https://github.com/xzima/maven-semantic-release-example/commit/a52a56938b8c099cfe40e6759dc94140deb498cf))
+
 ## [3.2.47](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.46...v3.2.47) (2022-04-15)
 
 

@@ -33,17 +33,6 @@ plugins:
         echo "::set-output name=new_release_version::${nextRelease.version}"
         echo "::set-output name=branch_type::${branch.type}"
         echo "::set-output name=branch_name::${branch.name}"
-        
-        if git ls-remote --exit-code --heads origin rc; then
-          echo "exist"
-          git checkout -B rc
-          git merge -m 'chore(release): Sync with next release [skip ci]' origin/rc
-          git push rc
-        else
-          echo "NOT exist"
-          git checkout -B rc
-          git push rc
-        fi
   - - "@semantic-release/git"
     - assets: "."
   - - "@semantic-release/github"
