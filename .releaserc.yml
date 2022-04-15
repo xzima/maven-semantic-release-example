@@ -36,12 +36,12 @@ plugins:
         
         if git ls-remote --exit-code --heads origin rc; then
           echo "exist"
-          git checkout rc
+          git checkout -B rc
           git merge -m 'chore(release): Sync with next release [skip ci]' origin/rc
           git push rc
         else
           echo "NOT exist"
-          git checkout rc
+          git checkout -B rc
           git push rc
         fi
   - - "@semantic-release/git"
