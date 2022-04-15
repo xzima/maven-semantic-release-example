@@ -1,8 +1,6 @@
 name: Gitflow
 on:
   push:
-    branches:
-      - rc
 
 jobs:
   build:
@@ -12,7 +10,7 @@ jobs:
       - uses: Logerfo/gitflow-action@0.0.4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          release: rc # The `release` branch.
+          release: release # The `release` branch.
           master: master # The `master` branch.
           dev: rc # The `dev` branch.
           label: gitflow # The pull request label.
