@@ -105,20 +105,3 @@ jobs:
           echo ${{ steps.release.outputs.new_release_version }}
           echo ${{ steps.release.outputs.branch_type }}
           echo ${{ steps.release.outputs.branch_name }}
-
-      - uses: yanamura/git-flow-merge-action@v1
-        if: steps.release.outputs.branch_name == 'master'
-        with:
-          ### GITHUB_TOKEN.(required)
-          github_token: ${{ secrets.GH_TOKEN }}
-
-          ### branch name which merged to develop and master branch.(required)
-          ### ex. release/1.1.0, hotfix_branch
-          branch: ${{ steps.release.outputs.branch_name }}
-
-          ### develop branch name. default: develop (optional).
-          develop_branch: 'rc'
-
-          ### main branch name. default: master (optional).
-  #        main_branch: 'main'
-
