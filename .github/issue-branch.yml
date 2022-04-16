@@ -1,14 +1,12 @@
+# see https://github.com/robvanderleek/create-issue-branch#configuration=
 mode: chatops
-#branchName: full
 
-autoCloseIssue: true
-
-openDraftPR: true
+openPR: true
 copyIssueDescriptionToPR: true
 copyIssueLabelsToPR: true
 copyIssueAssigneeToPR: true
-#copyIssueProjectsToPR: true
-#copyIssueMilestoneToPR: true
+copyIssueProjectsToPR: true
+copyIssueMilestoneToPR: true
 
 defaultBranch: develop
 branches:
