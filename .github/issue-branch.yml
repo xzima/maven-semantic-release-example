@@ -1,8 +1,6 @@
 mode: chatops
 #branchName: full
 
-autoCloseIssue: true
-
 openDraftPR: true
 copyIssueDescriptionToPR: true
 copyIssueLabelsToPR: true
