@@ -9,9 +9,6 @@ on:
       - rc
   pull_request:
     types: [ opened, synchronize, reopened ]
-    branches:
-      - master
-      - rc
 
 permissions:
   checks: write
@@ -25,7 +22,7 @@ jobs:
   #    name: Lint Commit Messages
   #    runs-on: ubuntu-latest
   #    steps:
-  #      - name: init repo
+  #      - name: ⤵️ Check out code from GitHub
   #        uses: actions/checkout@v3
   #        with:
   #          fetch-depth: 0
@@ -40,7 +37,7 @@ jobs:
   #    name: Run tests
   #    runs-on: ubuntu-latest
   #    steps:
-  #      - name: init repo
+  #      - name: ⤵️ Check out code from GitHub
   #        uses: actions/checkout@v3
   #        with:
   #          fetch-depth: 0
@@ -67,7 +64,7 @@ jobs:
     outputs:
       new_release_published: ${{ steps.release.outputs.new_release_published }}
     steps:
-      - name: init repo
+      - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v3
         with:
           fetch-depth: 0

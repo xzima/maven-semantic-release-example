@@ -1,17 +1,21 @@
+---
+# see https://github.com/Logerfo/gitflow-action
 name: Gitflow
 on:
   push:
+    branches:
+      - rc
+      - master
 
 jobs:
-  build:
-    name: Create release PR
+  gitflow:
+    name: 🔨 Create PR
     runs-on: ubuntu-latest
     steps:
       - uses: Logerfo/gitflow-action@0.0.4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          release: release # The `release` branch.
-          master: master # The `master` branch.
-          dev: rc # The `dev` branch.
-          label: gitflow # The pull request label.
-          auto-merge: false # If `true`, will try to automatically merge pull requests.
+          release: rc
+          master: master
+          dev: develop
+          auto-merge: false
