@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.58...v3.3.0) (2022-04-16)
+
+
+### Features
+
+* add issue templates ([#64](https://github.com/xzima/maven-semantic-release-example/issues/64)) ([0756d6b](https://github.com/xzima/maven-semantic-release-example/commit/0756d6b62940e05486e43a4742a5c5a7a772db9e)), closes [#61](https://github.com/xzima/maven-semantic-release-example/issues/61)
+
 ## [3.2.58](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.57...v3.2.58) (2022-04-15)
 
 
