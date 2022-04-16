@@ -1,0 +1,33 @@
+mode: chatops
+#branchName: full
+
+autoCloseIssue: true
+
+openDraftPR: true
+copyIssueDescriptionToPR: true
+copyIssueLabelsToPR: true
+copyIssueAssigneeToPR: true
+#copyIssueProjectsToPR: true
+#copyIssueMilestoneToPR: true
+
+defaultBranch: develop
+branches:
+  - label: hotfix
+    name: master
+    prefix: hotfix/
+  - label: new-feature
+    name: develop
+    prefix: feature/
+  - label: bug
+    name: develop
+    prefix: bugs/
+
+  - label: documentation
+    name: master
+    prefix: docs/
+  - label: ci
+    name: master
+    prefix: ci/
+
+  - label: '*'
+    skip: true
