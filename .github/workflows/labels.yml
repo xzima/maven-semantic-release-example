@@ -17,6 +17,15 @@ jobs:
     steps:
       - name: Debug action
         uses: hmarr/debug-action@v2.0.1
+      - name: Debug echo
+        env:
+          GITHUB_CONTENT: "${{ toJson(github) }}"
+          JOB_CONTENT: "${{ toJson(job) }}"
+          STEPS_CONTENT: "${{ toJson(steps) }}"
+        run: |
+          echo $CONTENT
+          echo $JOB_CONTENT
+          echo $STEPS_CONTENT
 
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v3
