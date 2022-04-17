@@ -58,12 +58,22 @@ jobs:
   #          files: "target/surefire-reports/TEST-*.xml"
 
   release:
+    if: ${{ !(github.event_name == 'pull_request' && contains('master rc', github.head_ref)) }}
     #    needs: [ run-test ]
     name: Release
     runs-on: ubuntu-latest
     outputs:
       new_release_published: ${{ steps.release.outputs.new_release_published }}
     steps:
+      - name: Debug action
+        uses: hmarr/debug-action@v2.0.1
+      - name: Debug echo
+        env:
+          JOB_CONTENT: "${{ toJson(job) }}"
+          STEPS_CONTENT: "${{ toJson(steps) }}"
+          GITHUB_CONTENT: "${{ toJson(github) }}"
+        run: "echo 'Debug echo'"
+
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v3
         with:

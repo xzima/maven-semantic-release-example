@@ -19,7 +19,16 @@ jobs:
   create_issue_branch:
     runs-on: ubuntu-latest
     steps:
-      - name: 🌴 Create branch
+      - name: Debug action
+        uses: hmarr/debug-action@v2.0.1
+      - name: Debug echo
+        env:
+          JOB_CONTENT: "${{ toJson(job) }}"
+          STEPS_CONTENT: "${{ toJson(steps) }}"
+          GITHUB_CONTENT: "${{ toJson(github) }}"
+        run: "echo 'Debug echo'"
+
+      - name: ♻️ Processing
         uses: robvanderleek/create-issue-branch@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

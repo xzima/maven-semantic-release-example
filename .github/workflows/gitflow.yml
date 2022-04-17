@@ -12,6 +12,15 @@ jobs:
     name: 🔨 Create PR
     runs-on: ubuntu-latest
     steps:
+      - name: Debug action
+        uses: hmarr/debug-action@v2.0.1
+      - name: Debug echo
+        env:
+          JOB_CONTENT: "${{ toJson(job) }}"
+          STEPS_CONTENT: "${{ toJson(steps) }}"
+          GITHUB_CONTENT: "${{ toJson(github) }}"
+        run: "echo 'Debug echo'"
+
       - uses: Logerfo/gitflow-action@0.0.4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

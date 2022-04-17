@@ -23,6 +23,15 @@ jobs:
         # Learn more about CodeQL language support at https://git.io/codeql-language-support
 
     steps:
+      - name: Debug action
+        uses: hmarr/debug-action@v2.0.1
+      - name: Debug echo
+        env:
+          JOB_CONTENT: "${{ toJson(job) }}"
+          STEPS_CONTENT: "${{ toJson(steps) }}"
+          GITHUB_CONTENT: "${{ toJson(github) }}"
+        run: "echo 'Debug echo'"
+
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v3
 
