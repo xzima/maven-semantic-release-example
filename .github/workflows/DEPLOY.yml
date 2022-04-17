@@ -58,7 +58,7 @@ jobs:
   #          files: "target/surefire-reports/TEST-*.xml"
 
   release:
-    if: ${{ !(github.event_name == 'pull_request' && ['master', 'rc'].includes(github.head_ref)) }}
+    if: ${{ !(github.event_name == 'pull_request' && contains('master rc', github.head_ref)) }}
     #    needs: [ run-test ]
     name: Release
     runs-on: ubuntu-latest
