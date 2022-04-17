@@ -11,6 +11,9 @@ jobs:
     name: 🏭 Verify
     runs-on: ubuntu-latest
     steps:
+      - name: Debug action
+        uses: hmarr/debug-action@v2.0.1
+
       - name: 🏷 Verify PR has a valid label
         uses: jesusvasquez333/verify-pr-label-action@v1.4.0
         with:

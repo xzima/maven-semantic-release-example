@@ -15,6 +15,9 @@ jobs:
     name: ♻️ Sync labels
     runs-on: ubuntu-latest
     steps:
+      - name: Debug action
+        uses: hmarr/debug-action@v2.0.1
+
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v3
 
