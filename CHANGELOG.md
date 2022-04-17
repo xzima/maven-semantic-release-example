@@ -1,3 +1,10 @@
+# [3.6.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.5.0...v3.6.0) (2022-04-17)
+
+
+### Features
+
+* update npm deps ([#74](https://github.com/xzima/maven-semantic-release-example/issues/74)) ([5a10741](https://github.com/xzima/maven-semantic-release-example/commit/5a107416b7beb4fbde9898fc2da8459a38cf3550))
+
 # [3.5.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.4.0...v3.5.0) (2022-04-17)
 
 
