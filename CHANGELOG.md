@@ -1,3 +1,17 @@
+# [3.5.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.4.0...v3.5.0) (2022-04-17)
+
+
+### Features
+
+* fix pr-label action condition ([bee4304](https://github.com/xzima/maven-semantic-release-example/commit/bee4304a178336b69583b2f72769c5d90b9605a0))
+
+# [3.4.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.3.0...v3.4.0) (2022-04-17)
+
+
+### Features
+
+* add codeowners ([#70](https://github.com/xzima/maven-semantic-release-example/issues/70)) ([009344b](https://github.com/xzima/maven-semantic-release-example/commit/009344b66576fae8347f1223610c2033f9dbf9aa)), closes [#69](https://github.com/xzima/maven-semantic-release-example/issues/69)
+
 # [3.3.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.2.58...v3.3.0) (2022-04-16)
 
 

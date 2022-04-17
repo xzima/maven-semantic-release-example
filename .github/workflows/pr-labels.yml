@@ -8,6 +8,7 @@ on:
 
 jobs:
   pr_labels:
+    if: ${{ github.event.pull_request.state != 'closed' }}
     name: 🏭 Verify
     runs-on: ubuntu-latest
     steps:
