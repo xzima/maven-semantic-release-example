@@ -28,7 +28,7 @@ plugins:
         ./mvnw -B com.mycila:license-maven-plugin:4.1:format org.codehaus.mojo:license-maven-plugin:2.0.0:add-third-party
       publishCmd: |
         ./mvnw -B clean license:check package
-    - successCmd: |
+      successCmd: |
         echo "::set-output name=new_release_published::true"
         echo "::set-output name=new_release_version::${nextRelease.version}"
         echo "::set-output name=branch_type::${branch.type}"
