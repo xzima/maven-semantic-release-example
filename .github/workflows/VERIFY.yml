@@ -13,7 +13,18 @@ permissions:
   pull-requests: write
 
 jobs:
+  lint:
+    name: Run lints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint PR title
+        if: ${{ !contains('master rc', github.head_ref) }}
+        uses: amannn/action-semantic-pull-request@v4.3.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build:
+    needs: [ lint ]
     name: Run tests & build
     runs-on: ubuntu-latest
     steps:
@@ -25,11 +36,6 @@ jobs:
           STEPS_CONTENT: "${{ toJson(steps) }}"
           GITHUB_CONTENT: "${{ toJson(github) }}"
         run: "echo 'Debug echo'"
-
-      - name: Validate PR title
-        uses: amannn/action-semantic-pull-request@v4.3.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: ⤵️ Check out code from GitHub
         uses: actions/checkout@v3
