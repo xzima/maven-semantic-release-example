@@ -1,3 +1,10 @@
+# [3.7.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.6.0...v3.7.0) (2022-04-20)
+
+
+### Features
+
+* integrate codecov ([ded814a](https://github.com/xzima/maven-semantic-release-example/commit/ded814a23fc3d4b957ed97d8d1b3951b6119aecf)), closes [#81](https://github.com/xzima/maven-semantic-release-example/issues/81)
+
 # [3.6.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.5.0...v3.6.0) (2022-04-17)
 
 
