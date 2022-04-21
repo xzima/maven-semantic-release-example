@@ -21,8 +21,8 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
-import static org.junit.Assert.assertThat;
 
 /**
  * Test for the app.
@@ -31,7 +31,7 @@ public class AppTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     /**
-     * setup a stream to capture the output from the program
+     * set up a stream to capture the output from the program
      */
     @Before
     public void setUpStreams() {
@@ -40,13 +40,16 @@ public class AppTest {
 
     /**
      * Make sure that "Hello World!" string can be printed.
-     *
-     * @throws Exception
      */
     @Test
-    public void canPrintHelp() throws Exception {
+    public void canPrintHelp() {
         String[] args = {"-help"};
         App.main(args);
         assertThat(outContent.toString(), containsString("Hello World!"));
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void testCatchThrow() {
+        new App().run();
     }
 }
