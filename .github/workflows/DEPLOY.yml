@@ -64,7 +64,7 @@ jobs:
         run: ./mvnw clean package
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3.0.0
+        uses: codecov/codecov-action@v3.1.0
         with:
           # token: ${{ secrets.CODECOV_TOKEN }} Required for private repos
           files: target/site/jacoco/jacoco.xml
