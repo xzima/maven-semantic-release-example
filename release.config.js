@@ -47,7 +47,7 @@ module.exports = {
     plugins: [
         '@semantic-release/commit-analyzer',
         ['@semantic-release/release-notes-generator', {
-            "preset": "conventionalcommits",
+            preset: "conventionalcommits",
             presetConfig: {
                 "types": [
                     {type: 'feat', section: 'Features'},
