@@ -1,3 +1,15 @@
+### [3.7.2](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.1...v3.7.2) (2022-05-24)
+
+
+### 🔨 Build System
+
+* **deps:** configure prefix for dependabot commit messages ([bf715da](https://github.com/xzima/maven-semantic-release-example/commit/bf715daff5e9e8c44565bf664d1a3f2d4ac1862f))
+
+
+### ⚙️ Continuous Integration
+
+* extend semantic-release logic ([0f31d76](https://github.com/xzima/maven-semantic-release-example/commit/0f31d7606b2a6bb05e0e25165f34dd643787ae09))
+
 ### [3.7.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.0...v3.7.1) (2022-05-24)
 
 
