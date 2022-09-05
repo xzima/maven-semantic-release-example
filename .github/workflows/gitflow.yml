@@ -21,7 +21,7 @@ jobs:
           GITHUB_CONTENT: "${{ toJson(github) }}"
         run: "echo 'Debug echo'"
 
-      - uses: Logerfo/gitflow-action@0.0.4
+      - uses: Logerfo/gitflow-action@0.0.5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           release: rc
