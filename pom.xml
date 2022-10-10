@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <!--==========================================-->
-        <plugin.enforcer.version>3.0.0</plugin.enforcer.version>
+        <plugin.enforcer.version>3.1.0</plugin.enforcer.version>
         <!-- license -->
         <plugin.license.version>4.1</plugin.license.version>
         <license.header>.github/LICENSE_HEADER.txt</license.header>
@@ -98,7 +98,7 @@
                 <!-- Allow attaching Javadoc during releases -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>3.4.1</version>
                 <configuration>
                     <source>11</source>
                     <detectJavaApiLink>false</detectJavaApiLink>
@@ -229,7 +229,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <id>copy-resources</id>
@@ -280,14 +280,14 @@
             <dependency>
                 <groupId>io.ktor</groupId>
                 <artifactId>ktor-bom</artifactId>
-                <version>2.0.0</version>
+                <version>2.1.2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-bom</artifactId>
-                <version>1.6.21</version>
+                <version>1.7.20</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

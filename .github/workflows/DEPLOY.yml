@@ -38,7 +38,7 @@ jobs:
           fetch-depth: 0
 
       - name: Lint Commit Messages
-        uses: wagoid/commitlint-github-action@v4.1.11
+        uses: wagoid/commitlint-github-action@v5.0.2
         with:
           configFile: .github/commitlint.config.js
           helpURL: https://www.conventionalcommits.org
@@ -64,7 +64,7 @@ jobs:
         run: ./mvnw clean package
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3.1.0
+        uses: codecov/codecov-action@v3.1.1
         with:
           # token: ${{ secrets.CODECOV_TOKEN }} Required for private repos
           files: target/site/jacoco/jacoco.xml
@@ -73,7 +73,7 @@ jobs:
           fail_ci_if_error: true
 
       - name: Publish Unit Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v1
+        uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
           files: "target/surefire-reports/TEST-*.xml"
