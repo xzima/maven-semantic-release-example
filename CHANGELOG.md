@@ -1,3 +1,20 @@
+### [3.7.3](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.2...v3.7.3) (2022-10-10)
+
+
+### 🔨 Build System
+
+* bump codecov/codecov-action from 3.1.0 to 3.1.1 ([f7875e6](https://github.com/xzima/maven-semantic-release-example/commit/f7875e6d3c1658ae0535667539168ec10ad369a6))
+* bump EnricoMi/publish-unit-test-result-action from 1 to 2 ([9f7f23f](https://github.com/xzima/maven-semantic-release-example/commit/9f7f23f9f95cbedaefbe4cf8462890fb92580af0))
+* bump kotlin-bom from 1.6.21 to 1.7.20 ([f9bda8f](https://github.com/xzima/maven-semantic-release-example/commit/f9bda8fb6928c8402a540dacd6552b808ad11826))
+* bump ktor-bom from 2.0.0 to 2.1.1 ([f1cd0cd](https://github.com/xzima/maven-semantic-release-example/commit/f1cd0cd14365b55bbf555ed8bd970bf9f9be9c1b))
+* bump ktor-bom from 2.1.1 to 2.1.2 ([328a22d](https://github.com/xzima/maven-semantic-release-example/commit/328a22d51b0206ae1563d72dea7124800e4bf46e))
+* bump maven-enforcer-plugin from 3.0.0 to 3.1.0 ([ff840de](https://github.com/xzima/maven-semantic-release-example/commit/ff840de0c50551b39c4426e93eab6776ca62f0f9))
+* bump maven-javadoc-plugin from 3.4.0 to 3.4.1 ([48c4286](https://github.com/xzima/maven-semantic-release-example/commit/48c428682e2bb1d54425567148b77be0dbe96ecf))
+* bump maven-resources-plugin from 3.2.0 to 3.3.0 ([86e95d4](https://github.com/xzima/maven-semantic-release-example/commit/86e95d41379e7164f61b05d233be91272a9022e4))
+* bump semantic-release from 19.0.2 to 19.0.5 ([f8739d2](https://github.com/xzima/maven-semantic-release-example/commit/f8739d218a213e9be3e61780f74d7a8f8468a28d))
+* bump wagoid/commitlint-github-action from 4.1.11 to 5.0.1 ([55e5b66](https://github.com/xzima/maven-semantic-release-example/commit/55e5b6669c7ec7ca30ea23dbe08311d421f25f00))
+* bump wagoid/commitlint-github-action from 5.0.1 to 5.0.2 ([1eab6e1](https://github.com/xzima/maven-semantic-release-example/commit/1eab6e1efd9099965ceeb66ffd9593d8190820e1))
+
 ### [3.7.2](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.1...v3.7.2) (2022-05-24)
 
 
