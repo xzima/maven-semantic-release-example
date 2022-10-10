@@ -1,3 +1,31 @@
+### [3.7.2](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.1...v3.7.2) (2022-05-24)
+
+
+### 🔨 Build System
+
+* **deps:** configure prefix for dependabot commit messages ([bf715da](https://github.com/xzima/maven-semantic-release-example/commit/bf715daff5e9e8c44565bf664d1a3f2d4ac1862f))
+
+
+### ⚙️ Continuous Integration
+
+* extend semantic-release logic ([0f31d76](https://github.com/xzima/maven-semantic-release-example/commit/0f31d7606b2a6bb05e0e25165f34dd643787ae09))
+
+### [3.7.1](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.0...v3.7.1) (2022-05-24)
+
+
+### Bug Fixes
+
+* add more tests ([1a9e826](https://github.com/xzima/maven-semantic-release-example/commit/1a9e826512cc2754b694fe892960d7992a8003a7))
+* change semantic-release config format ([963bf50](https://github.com/xzima/maven-semantic-release-example/commit/963bf500be59eafe3225b791f9e35e1c5149ebe8))
+* **release:** add conventional-changelog-conventionalcommits to package.json ([946a3f3](https://github.com/xzima/maven-semantic-release-example/commit/946a3f36468b0f8e5456f225819ecb1504745b4a))
+* specify badge links ([9f6ac41](https://github.com/xzima/maven-semantic-release-example/commit/9f6ac419f71be25f2df68228568f91437beebfd9))
+
+
+### Build System
+
+* **release:** change changelog configuration ([5a5a202](https://github.com/xzima/maven-semantic-release-example/commit/5a5a202d753b4c60e12ebe03e8048d49421f2331))
+* **release:** clear release.config.js ([aa580ba](https://github.com/xzima/maven-semantic-release-example/commit/aa580ba13dc8d9bb20bac4591703a05bd6759171))
+
 # [3.7.0](https://github.com/xzima/maven-semantic-release-example/compare/v3.6.0...v3.7.0) (2022-04-20)
 
 
