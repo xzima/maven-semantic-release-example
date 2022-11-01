@@ -1,3 +1,10 @@
+## [3.7.5](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.4...v3.7.5) (2022-11-01)
+
+
+### ⚙️ Continuous Integration
+
+* disable dependabot ([110e337](https://github.com/xzima/maven-semantic-release-example/commit/110e33741dd404079993aa794fad3e030037bf4d))
+
 ## [3.7.4](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.3...v3.7.4) (2022-11-01)
 
 
