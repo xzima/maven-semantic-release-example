@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Debug action
-        uses: hmarr/debug-action@v2.0.1
+        uses: hmarr/debug-action@v2.1.0
       - name: Debug echo
         env:
           JOB_CONTENT: "${{ toJson(job) }}"
@@ -38,7 +38,7 @@ jobs:
           fetch-depth: 0
 
       - name: Lint Commit Messages
-        uses: wagoid/commitlint-github-action@v5.0.2
+        uses: wagoid/commitlint-github-action@v5.2.2
         with:
           configFile: .github/commitlint.config.js
           helpURL: https://www.conventionalcommits.org
