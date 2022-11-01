@@ -54,7 +54,7 @@ module.exports = {
                 {type: 'feat', release: 'minor'},
                 {type: 'fix', release: 'patch'},
                 {type: 'perf', release: 'patch'},
-                {type: 'docs', release: 'patch'},
+                // {type: 'docs', release: 'patch'},
                 {type: 'build', release: 'patch'},
                 {type: 'ci', release: 'patch'},
             ]
