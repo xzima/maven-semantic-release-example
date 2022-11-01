@@ -12,8 +12,5 @@
   "baseBranches": [
     "develop"
   ],
-  "schedule": [
-    "every weekend"
-  ],
-  "reviewersFromCodeOwners": true
+  "dependencyDashboardApproval": true
 }
