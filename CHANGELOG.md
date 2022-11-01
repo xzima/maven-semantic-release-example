@@ -1,3 +1,22 @@
+## [3.7.5](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.4...v3.7.5) (2022-11-01)
+
+
+### ⚙️ Continuous Integration
+
+* disable dependabot ([110e337](https://github.com/xzima/maven-semantic-release-example/commit/110e33741dd404079993aa794fad3e030037bf4d))
+
+## [3.7.4](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.3...v3.7.4) (2022-11-01)
+
+
+### 🔨 Build System
+
+* bump conventional-changelog-conventionalcommits ([93c703f](https://github.com/xzima/maven-semantic-release-example/commit/93c703fb87490637da3cea927689dfed691a70fb))
+* bump hmarr/debug-action from 2.0.1 to 2.1.0 ([638a779](https://github.com/xzima/maven-semantic-release-example/commit/638a779e657859f3badd9b6dfd0087ce852ea995))
+* bump ktor-bom from 2.1.2 to 2.1.3 ([472a163](https://github.com/xzima/maven-semantic-release-example/commit/472a16354c7c5430e7493389ff93a37ed66ddbc9))
+* bump patch-package from 6.4.7 to 6.5.0 ([f895c3d](https://github.com/xzima/maven-semantic-release-example/commit/f895c3dc89fe2588c04d7993d67a18671f6a7e4a))
+* bump wagoid/commitlint-github-action from 5.0.2 to 5.2.0 ([9c90239](https://github.com/xzima/maven-semantic-release-example/commit/9c90239af991b41e0b3b6ef21aba9c7572a8c834))
+* bump wagoid/commitlint-github-action from 5.2.0 to 5.2.2 ([2f01c19](https://github.com/xzima/maven-semantic-release-example/commit/2f01c19e41c16031a515a6c208b79a8cafac3646))
+
 ### [3.7.3](https://github.com/xzima/maven-semantic-release-example/compare/v3.7.2...v3.7.3) (2022-10-10)
 
 
