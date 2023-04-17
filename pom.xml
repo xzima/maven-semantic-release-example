@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <!--==========================================-->
-        <plugin.enforcer.version>3.1.0</plugin.enforcer.version>
+        <plugin.enforcer.version>3.3.0</plugin.enforcer.version>
         <!-- license -->
         <plugin.license.version>4.1</plugin.license.version>
         <license.header>.github/LICENSE_HEADER.txt</license.header>
